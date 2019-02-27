@@ -1,59 +1,134 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Transcribe Games</title>
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script|Source+Code+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 	<style>
+		.row{
+			width:100%;
+			overflow:hidden;
+			 display: flex;
+ 			flex-wrap: wrap;
+ 			padding: 0;
+		}
+		.chase{
+			background-image: url('The Chase.PNG')
+		}
+		.scribe{
+			background-image: url('Scribe Kingdom.PNG');
+		}
+		.mercy{
+			background-image: url('Mercy.PNG');
+		}
+		.aspretto{
+			background-image: url("Team Aspretto.PNG");
+		}
+		.jorge{
+			
+		}
+		.brisbois{
+			background-image: url("sebastien brisbrois.PNG");
+		}
+		.trackscribe{
+			background-image: url("Trackscribe.PNG");
+		}
+		.ready{
+			background-image: url("Transcription Ready.PNG");
+		}
 
-.column {
- 	width: 33%;
- 	float:left;
+		a.fill-div {
+    		display: block;
+    		height: 100%;
+    		width: 100%;
+    		text-decoration: none;
+		}
+		body{
+			margin:0;
+		}
+.box{
+	width: 33%;
+	height:33vh;
+	overflow:hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	float:left;
+}
+.box a {
+	opacity:0;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  max-width: 350px;
-
-
+.box:hover a {
+	opacity:1;
+	background-color: rgba(255, 255, 255, 0.5);
 }
-.column img:hover{
-	opacity:0.25;
+.nohover:hover{
+	opacity:1;
 }
-.picturewriting {
-	display:none;
+.box a{
+	line-height: 33vh;
+	color:white;
+	text-shadow: 4px 4px 10px black;
+	font-family: 'Marck Script', cursive;
+	margin:auto;
+	color: white;
+	text-align: center;
+	font-size: 250%;
 }
-.column img:hover .picturewriting{
-	display:block;
+.centre{
+	text-align: center;
+	background-color: black;
+	color: white;
+	text-shadow: 4px 4px 10px black;
+	font-family: 'Spectral SC', serif;
 }
-@media screen and (max-width: 600px) {
-  .column {
+@media screen and (max-width: 800px) {
+  .box {
     flex: 100%;
     max-width: 100%;
   }
+ 
+}
 	</style>
 </head>
 <body>
 	<div class="row">
-		<div class="column">
-			<div class= "image">
-				<img src="Jorge Worge.png">
-				<p class="picturewriting">Jorge Worge</p>
-			</div>
-			<img src="Mercy.png">
-			<img src="Scribe Kingdom.png">
+		<div class="chase box">
+			<a href="https://hello1024.github.io/TheChase/" class="fill-div">The Chase</a>
 		</div>
-		<div class="column">
-			<img src="sebastien brisbrois.png">
-			<div>
-				<h1>Hacking the Past: An Archives Game Jam</h1>
-			</div>
-			<img src="Team Aspretto.png">
+		<div class="scribe box">
+			<a href="https://docs.google.com/presentation/d/15epdT_gJsr9ehT9Y4WFKvJnYgzUpZH8e84gAN67ZFGo/present?usp=sharing" class="fill-div">Super Techs</a>
 		</div>
-		<div class="column">
-			<img src="The Chase.png">
-			<img src="Trackscribe.png">
-			<img src="Transcription Ready.png">
+		<div class="mercy box">
+			<a href="https://docs.google.com/presentation/d/1El1HcnBYl4RxtZB4_p-DhjQOJ-qBsZNpj69STmxpsi0/present?usp=sharing" class="fill-div">Mercy</a>
 		</div>
 
+
+	</div>
+	<div class="row">
+		<div class="aspretto box"> 
+			<a href="https://docs.google.com/presentation/d/13wPwgtZgQwNLTYnXQ4rbu-J6rZ6IJnemNBPgvKysXKw/present?usp=sharing" class="fill-div">Bentham's Kitchen</a>
+		</div>
+		<div class="centre box nohover">
+			<h1>Hacking the Past</h1><h2> An Archives Game Jam</h2>
+		</div>
+		<div class="jorge box" style="background-image: url('Jorge Worge.PNG');">
+			<a href="https://docs.google.com/presentation/d/1CwL0OxNW6ZFSB_5FLPXHwnjjAVdqtgwhaR9mD8w6Gyk/present?usp=sharing" class="fill-div">Jorge Worge</a>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="brisbois box">
+			<a href="http://www.jahsper.com/GameJam/" class="fill-div">Scrabble</a>
+		</div>
+		<div class="trackscribe box">
+			<a href="https://docs.google.com/presentation/d/1teWq9SQd4BUojO31wj_laJNVRqYIVImrm2-vbLs2pSE/present?usp=sharing" class="fill-div">Trackscribe</a>
+
+
+	</div>
+	<div class="ready box" style="background-image: url('Transcription Ready.PNG');">
+			<a href="https://docs.google.com/presentation/d/1Fpl2v0y89RdNFHOKSKpGra1qSk4ctaEPpOe8suy79yg/present?usp=sharing" class="fill-div">Transcription Ready</a>
 	</div>
 </body>
 </html>
