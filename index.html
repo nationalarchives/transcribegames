@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+
+.column {
+ 	width: 33%;
+ 	float:left;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 350px;
+
+
+}
+.column img:hover{
+	opacity:0.25;
+}
+.picturewriting {
+	display:none;
+}
+.column img:hover .picturewriting{
+	display:block;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="column">
+			<div class= "image">
+				<img src="Jorge Worge.png">
+				<p class="picturewriting">Jorge Worge</p>
+			</div>
+			<img src="Mercy.png">
+			<img src="Scribe Kingdom.png">
+		</div>
+		<div class="column">
+			<img src="sebastien brisbrois.png">
+			<div>
+				<h1>Hacking the Past: An Archives Game Jam</h1>
+			</div>
+			<img src="Team Aspretto.png">
+		</div>
+		<div class="column">
+			<img src="The Chase.png">
+			<img src="Trackscribe.png">
+			<img src="Transcription Ready.png">
+		</div>
+
+	</div>
+</body>
+</html>
